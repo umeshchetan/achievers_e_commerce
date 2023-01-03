@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>eCommerce HTML-5 Template </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/flaticon.css">
+  <link rel="stylesheet" href="assets/css/slicknav.css">
+  <link rel="stylesheet" href="assets/css/animate.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="assets/css/themify-icons.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/nice-select.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script
+    nonce="81a2d0cb-0a57-4d32-98b4-313a771dfd2e">(function (w, d) { !function (eK, eL, eM, eN) { eK.zarazData = eK.zarazData || {}; eK.zarazData.executed = []; eK.zaraz = { deferred: [], listeners: [] }; eK.zaraz.q = []; eK.zaraz._f = function (eO) { return function () { var eP = Array.prototype.slice.call(arguments); eK.zaraz.q.push({ m: eO, a: eP }) } }; for (const eQ of ["track", "set", "debug"]) eK.zaraz[eQ] = eK.zaraz._f(eQ); eK.zaraz.init = () => { var eR = eL.getElementsByTagName(eN)[0], eS = eL.createElement(eN), eT = eL.getElementsByTagName("title")[0]; eT && (eK.zarazData.t = eL.getElementsByTagName("title")[0].text); eK.zarazData.x = Math.random(); eK.zarazData.w = eK.screen.width; eK.zarazData.h = eK.screen.height; eK.zarazData.j = eK.innerHeight; eK.zarazData.e = eK.innerWidth; eK.zarazData.l = eK.location.href; eK.zarazData.r = eL.referrer; eK.zarazData.k = eK.screen.colorDepth; eK.zarazData.n = eL.characterSet; eK.zarazData.o = (new Date).getTimezoneOffset(); if (eK.dataLayer) for (const eX of Object.entries(Object.entries(dataLayer).reduce(((eY, eZ) => ({ ...eY[1], ...eZ[1] }))))) zaraz.set(eX[0], eX[1], { scope: "page" }); eK.zarazData.q = []; for (; eK.zaraz.q.length;) { const e_ = eK.zaraz.q.shift(); eK.zarazData.q.push(e_) } eS.defer = !0; for (const fa of [localStorage, sessionStorage]) Object.keys(fa || {}).filter((fc => fc.startsWith("_zaraz_"))).forEach((fb => { try { eK.zarazData["z_" + fb.slice(7)] = JSON.parse(fa.getItem(fb)) } catch { eK.zarazData["z_" + fb.slice(7)] = fa.getItem(fb) } })); eS.referrerPolicy = "origin"; eS.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(eK.zarazData))); eR.parentNode.insertBefore(eS, eR) };["complete", "interactive"].includes(eL.readyState) ? zaraz.init() : eK.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, 0, "script"); })(window, document);</script>
+</head>
+
+<body>
+  <header>
+
+    <div class="header-area">
+      <div class="main-header ">
+        <div class="header-top top-bg d-none d-lg-block">
+          <div class="container-fluid">
+            <div class="col-xl-12">
+              <div class="row d-flex justify-content-between align-items-center">
+                <div class="header-info-left d-flex">
+                  <div class="flag">
+                    <img src="assets/img/icon/header_icon.png" alt="">
+                  </div>
+                  <div class="select-this">
+                    <form action="#">
+                      <div class="select-itms">
+                        <select name="select" id="select1">
+                          <option value="">USA</option>
+                          <option value="">SPN</option>
+                          <option value="">CDA</option>
+                          <option value="">USD</option>
+                        </select>
+                      </div>
+                    </form>
+                  </div>
+                  <ul class="contact-now">
+                    <li>+777 2345 7886</li>
+                  </ul>
+                </div>
+                <div class="header-info-right">
+                  <ul>
+                    <li><a href="login.html">My Account </a></li>
+                    <li><a href="product_list.html">Wish List </a></li>
+                    <li><a href="cart.html">Shopping</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom  header-sticky">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+
+              <div class="col-xl-1 col-lg-1 col-md-1 col-sm-3">
+                <div class="logo">
+                  <a href="index.html"><img src="assets/img/log" alt="" width='200px'></a>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-8 col-md-7 col-sm-5">
+
+                <div class="main-menu f-right d-none d-lg-block">
+                  <nav>
+                    <ul id="navigation">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="Catagori.html">Catagori</a></li>
+                      <li class="hot"><a href="#">Latest</a>
+                        <ul class="submenu">
+                          <li><a href="product_list.html"> Product list</a></li>
+                          <li><a href="single-product.html"> Product Details</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="blog.html">Blog</a>
+                        <ul class="submenu">
+                          <li><a href="blog.html">Blog</a></li>
+                          <li><a href="single-blog.html">Blog Details</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Pages</a>
+                        <ul class="submenu">
+                          <li><a href="login.html">Login</a></li>
+                          <li><a href="cart.html">Card</a></li>
+                          <li><a href="elements.html">Element</a></li>
+                          <li><a href="about.html">About</a></li>
+                          <li><a href="confirmation.html">Confirmation</a></li>
+                          <li><a href="cart.html">Shopping Cart</a></li>
+                          <li><a href="checkout.html">Product Checkout</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="col-xl-5 col-lg-3 col-md-3 col-sm-3 fix-card">
+                <ul class="header-right f-right d-none d-lg-block d-flex justify-content-between">
+                  <li class="d-none d-xl-block">
+                    <div class="form-box f-right ">
+                      <input type="text" name="Search" placeholder="Search products">
+                      <div class="search-icon">
+                        <i class="fas fa-search special-tag"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li class=" d-none d-xl-block">
+                    <div class="favorit-items">
+                      <i class="far fa-heart"></i>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="shopping-card">
+                      <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                  </li>
+                  <li class="d-none d-lg-block"> <a href="#" class="btn header-btn">Sign in</a></li>
+                </ul>
+              </div>
+
+              <div class="col-12">
+                <div class="mobile_menu d-block d-lg-none"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <div class="slider-area ">
+
+    <div class="single-slider slider-height2 d-flex align-items-center" data-background="assets/img/hero/category.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="hero-cap text-center">
+              <h2>About</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="about_us padding_top">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="about_us_content">
+            <h5>Our Mission</h5>
+            <h3>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor sollicitudin. Pellentesque id dolor
+              tempor sapien feugiat ultrices nec sed neque.</h3>
+            <div class="about_us_video">
+              <img src="assets/img/about_us_video.png" alt="#" class="img-fluid">
+              <a class="about_video_icon popup-youtube" href="https://www.youtube.com/watch?v=DWHB6nTyKDI"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="feature_part section_padding">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-6">
+          <div class="feature_part_tittle">
+            <h3>Credibly innovate granular
+              internal or organic sources
+              whereas standards.</h3>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="feature_part_content">
+            <p>Seamlessly empower fully researched growth strategies and interoperable internal or “organic” sources.
+              Credibly innovate granular internal or “organic” sources whereas high standards in web-readiness.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-sm-6">
+          <div class="single_feature_part">
+            <img src="assets/img/icon/feature_icon_1.svg" alt="#">
+            <h4>Credit Card Support</h4>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="single_feature_part">
+            <img src="assets/img/icon/feature_icon_2.svg" alt="#">
+            <h4>Online Order</h4>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="single_feature_part">
+            <img src="assets/img/icon/feature_icon_3.svg" alt="#">
+            <h4>Free Delivery</h4>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="single_feature_part">
+            <img src="assets/img/icon/feature_icon_4.svg" alt="#">
+            <h4>Product with Gift</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="client_review">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="client_review_slider owl-carousel">
+            <div class="single_client_review">
+              <div class="client_img">
+                <img src="assets/img/client.png" alt="#">
+              </div>
+              <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate
+                human suffering.</p>
+              <h5>- Micky Mouse</h5>
+            </div>
+            <div class="single_client_review">
+              <div class="client_img">
+                <img src="assets/img/client_1.png" alt="#">
+              </div>
+              <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate
+                human suffering.</p>
+              <h5>- Micky Mouse</h5>
+            </div>
+            <div class="single_client_review">
+              <div class="client_img">
+                <img src="assets/img/client_2.png" alt="#">
+              </div>
+              <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate
+                human suffering.</p>
+              <h5>- Micky Mouse</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="subscribe_part section_padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="subscribe_part_content">
+            <h2>Get promotions & updates!</h2>
+            <p>Seamlessly empower fully researched growth strategies and interoperable internal or “organic” sources
+              credibly innovate granular internal .</p>
+            <div class="subscribe_form">
+              <input type="email" placeholder="Enter your mail">
+              <a href="#" class="btn_1">Subscribe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+
+    <div class="footer-area footer-padding">
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+          <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6">
+            <div class="single-footer-caption mb-50">
+              <div class="single-footer-caption mb-30">
+
+                <div class="footer-logo">
+                  <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                </div>
+                <div class="footer-tittle">
+                  <div class="footer-pera">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut
+                      labore.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5">
+            <div class="single-footer-caption mb-50">
+              <div class="footer-tittle">
+                <h4>Quick Links</h4>
+                <ul>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#"> Offers & Discounts</a></li>
+                  <li><a href="#"> Get Coupon</a></li>
+                  <li><a href="#"> Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-7">
+            <div class="single-footer-caption mb-50">
+              <div class="footer-tittle">
+                <h4>New Products</h4>
+                <ul>
+                  <li><a href="#">Woman Cloth</a></li>
+                  <li><a href="#">Fashion Accessories</a></li>
+                  <li><a href="#"> Man Accessories</a></li>
+                  <li><a href="#"> Rubber made Toys</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-5 col-sm-7">
+            <div class="single-footer-caption mb-50">
+              <div class="footer-tittle">
+                <h4>Support</h4>
+                <ul>
+                  <li><a href="#">Frequently Asked Questions</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Report a Payment Issue</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-7 col-lg-8 col-md-7">
+            <div class="footer-copy-right">
+              <p>
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made<i
+                  class="fa fa-heart" aria-hidden="true"></i> by <a href="#">Mr. Murali Pagadala</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-5 col-md-5">
+            <div class="footer-copy-right f-right">
+
+              <div class="footer-social">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-behance"></i></a>
+                <a href="#"><i class="fas fa-globe"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+
+  <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+
+  <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+  <script src="./assets/js/owl.carousel.min.js"></script>
+  <script src="./assets/js/slick.min.js"></script>
+
+  <script src="./assets/js/wow.min.js"></script>
+  <script src="./assets/js/animated.headline.js"></script>
+
+  <script src="./assets/js/jquery.scrollUp.min.js"></script>
+  <script src="./assets/js/jquery.nice-select.min.js"></script>
+  <script src="./assets/js/jquery.sticky.js"></script>
+  <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+  <script src="./assets/js/contact.js"></script>
+  <script src="./assets/js/jquery.form.js"></script>
+  <script src="./assets/js/jquery.validate.min.js"></script>
+  <script src="./assets/js/mail-script.js"></script>
+  <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+
+  <script src="./assets/js/plugins.js"></script>
+  <script src="./assets/js/main.js"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+  </script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
+    integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+    data-cf-beacon='{"rayId":"783313c989043c01","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.11.3","si":100}'
+    crossorigin="anonymous"></script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
+        integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+        data-cf-beacon='{"rayId":"7832480e1c3f3c01","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.11.3","si":100}'
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
